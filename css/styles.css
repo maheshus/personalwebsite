@@ -1,0 +1,32 @@
+body{
+  background-color: #112031;
+  font-family: Microsoft Sans Serif;
+}
+h1{
+  color: #D4ECDD;
+}
+h3{
+  color: #D4ECDD;
+}
+p{
+  color: #D4ECDD;
+}
+li{
+  color: #D4ECDD;
+}
+td{
+  color: #D4ECDD;
+}
+hr{
+  border-style:none;
+  border-top-style: dotted;
+  border-width: 5px;
+  border-color: #345B63;
+  width: 2%;
+}
+th{
+  color: #D4ECDD;
+}
+label{
+  color: #D4ECDD;
+}
