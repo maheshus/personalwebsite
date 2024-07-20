@@ -1,60 +1,124 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>🌌 Mahe's Personal Site</title>
-  <link rel="stylesheet" href="css\styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahesh U S</title>
+    <link rel="icon" sizes="32x32" href="https://upload.wikimedia.org/wikipedia/commons/a/ac/Apollo_13-insignia.png" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <table cellspacing=10>
-    <tr>
-      <td><img height=180 width=180 src="resources\thanks.png" alt="NY152"></td>
-      <td>
-        <h1>Mahesh U S</h1>
-        <p><strong>Student, </strong><em>Computer Science Engineering</em></p>
-        <p><em>Marian Engineering College</em></p>
-        <p><em>Trivandrum, Kerala, India.</em></p>
-      </td>
-    </tr>
-  </table>
-  <hr>
-  <p>I am student at Marian Engineering College. I am pursuing my UG course in Computer Science Engineering. I am interested in Web Development, Robotics and Astronomy.</p>
-  <hr>
-  <h3>Education</h3>
-  <ul>
-    <li>Web Development </li>
-    <li>Java Programming</li>
-    <li>C Programming</li>
-  </ul>
-  <hr>
-  <h3>Skills</h3>
-  <table cellpading=10 cellspacing=0>
-    <tr>
-      <td>Programming</td>
-      <td>★★★☆☆</td>
-    </tr>
-    <tr>
-      <td>Web Development</td>
-      <td>★★☆☆☆</td>
-    </tr>
-    <tr>
-      <td>Photography</td>
-      <td>★★☆☆☆</td>
-    </tr>
-    <tr>
-      <td>Canva</td>
-      <td>★★★☆☆</td>
-    </tr>
-  </table>
-  <hr>
-  <a href="hobbies.html">My Hobbies</a>
-  <br>
-  <a href="contact.html">Contact Me</a>
-  <hr>
-  <a href="thanks.html">Are you curious?</a>
+    <div class="background_animation"></div>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <!-- <li><a href="#projects">Projects</a></li> -->
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="thanks.html">🎁</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>Hello, I'm Mahesh</h1>
+        <p>Software Developer Specializing in Automation</p>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I earned my Bachelor of Technology in Computer Science & Engineering from Marian Engineering College,
+            Trivandrum. Currently, I'm an Automation Developer at Guidehouse.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>
+                <img src="https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/community/logos/python-logo-only.png"
+                    alt="Python Logo" class="skill-logo">
+            </li>
+            <li>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/C_Sharp_Icon.png" alt="C# Logo"
+                    class="skill-logo">
+            </li>
+            <li>
+                <img src="https://upload.wikimedia.org/wikipedia/en/8/80/UiPath_2019_Corporate_Logo.png"
+                    alt="UiPath Logo" class="skill-logo">
+            </li>
+            <li>
+                <img src="https://www.automationanywhere.com/sites/default/files/images/AAI/automation-anywhere-logo-corporate-tm-line-lg.svg"
+                    alt="Automation Anywhere A360 Logo" class="skill-logo">
+            </li>
+            <li>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Microsoft_Power_Platform_logo.svg"
+                    class="skill-logo">
+            </li>
+        </ul>
+    </section>
+
+
+    <!-- Projects Section -->
+    <!-- <section id="projects">
+        <h2>Projects</h2>
+        <div>
+            <h3>Project 1</h3>
+            <p>Project description.</p>
+        </div>
+        <div>
+            <h3>Project 2</h3>
+            <p>Project description.</p>
+        </div>
+    </section> -->
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <div>
+            <h3>Technical Associate</h3>
+            <p>Guidehouse</p>
+            <p>2023 - Present</p>
+            <p>Robotic Process Automation</p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <div>
+            <h3>Bachelor of Technology, Computer Science & Engineering</h3>
+            <p>Marian Engineering College</p>
+            <p>Graduation Year - 2023</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: maheshsubramoni1@gmail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/maheshusu">Mahesh U S</a></p>
+        <p>GitHub: <a href="https://github.com/maheshus">maheshus</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Developed by Mahesh 🐱‍🚀</p>
+        <!-- Back to Top Button -->
+        <a href="#" id="back-to-top" title="Back to Top">
+            <img src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-up-01-512.png" alt="Back to Top">
+        </a>
+    </footer>
 </body>
 
 </html>

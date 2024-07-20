@@ -3,110 +3,135 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Tom Hanks Movies</title>
-  <link rel="stylesheet" href="css\styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fan Page</title>
+  <link rel="icon" sizes="32x32" href="https://upload.wikimedia.org/wikipedia/commons/a/ac/Apollo_13-insignia.png"
+    type="image/png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap">
+  <link rel="stylesheet" href="styles2.css">
 </head>
 
-
 <body>
-  <p>Hey there curious human!</p>
-  <p>As you may have seen my profile picture is a photograph of the Tom Hanks. I am a die hard fan of him!</p>
-  <p>I am listing my favourite Tom Hanks films.</p>
-  <hr>
-  <h3>My favourite Tom Hanks Movies</h3>
-  <table border="1" cellpadding=10 cellspacing=0>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Year</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Apollo 13</td>
-        <td>1955</td>
-      </tr>
-      <tr>
-        <td>Forrest Gump</td>
-        <td>1994</td>
-      </tr>
-      <tr>
-        <td>The Terminal</td>
-        <td>2004</td>
-      </tr>
-      <tr>
-        <td>You've Got Mail</td>
-        <td>1998</td>
-      </tr>
-      <tr>
-        <td>Sleepless in Seattle</td>
-        <td>1993</td>
-      </tr>
-      <tr>
-        <td>Saving Private Ryan</td>
-        <td>1998</td>
-      </tr>
-      <tr>
-        <td>Cast Away</td>
-        <td>2000</td>
-      </tr>
-      <tr>
-        <td>Sully</td>
-        <td>2016</td>
-      </tr>
-      <tr>
-        <td>Catch Me If You Can</td>
-        <td>2002</td>
-      </tr>
-    </tbody>
-  </table>
-  <br>
-  <hr>
-  <p>Here's a chance for you!</p>
-  <p>Submit your favourite THanks film.</p>
-  <form action="mailto:maheshsubramoni1@gmail.com" method="post">
-    <div class="">
-      <table cellspacing=10>
+  <div class="background_animation"></div>
+  <header>
+    <h1>Tom Hanks Fan Page</h1>
+  </header>
+
+  <section class="intro">
+    <p>Hey there curious human!</p>
+    <p>As you may have seen, my profile picture is a photograph of Tom Hanks. I am a die-hard fan of him!</p>
+    <p>Here are my favorite Tom Hanks films.</p>
+  </section>
+
+  <section class="movies">
+    <h3>My Favorite Tom Hanks Movies</h3>
+    <table class="movies-table">
+      <thead>
         <tr>
-          <td><label>Film Name</label></td>
-          <td><input type="text" name="Name" value=""></td>
+          <th>Name</th>
+          <th>Year</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Apollo 13</td>
+          <td>1995</td>
         </tr>
         <tr>
-          <td><label>Select Release date</label></td>
-          <td><input type="date" name="Date" value=""></td>
+          <td>Forrest Gump</td>
+          <td>1994</td>
         </tr>
         <tr>
-          <td><label>What's your rating out of 5</label></td>
-          <td><input type="range" name="Rating" value=""></td>
+          <td>The Terminal</td>
+          <td>2004</td>
         </tr>
         <tr>
-          <td><label>Upload film poster</label></td>
-          <td><input type="file" name="" value=""></td>
+          <td>You've Got Mail</td>
+          <td>1998</td>
         </tr>
-      </table>
-      <input type="submit" name="">
+        <tr>
+          <td>Sleepless in Seattle</td>
+          <td>1993</td>
+        </tr>
+        <tr>
+          <td>Saving Private Ryan</td>
+          <td>1998</td>
+        </tr>
+        <tr>
+          <td>Cast Away</td>
+          <td>2000</td>
+        </tr>
+        <tr>
+          <td>Sully</td>
+          <td>2016</td>
+        </tr>
+        <tr>
+          <td>Catch Me If You Can</td>
+          <td>2002</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="submission-form">
+    <h3>Submit Your Favorite Tom Hanks Film</h3>
+    <form action="mailto:maheshsubramoni1@gmail.com" method="post">
+      <div class="form-group">
+        <table class="form-table">
+          <tr>
+            <td><label for="film-name">Film Name</label></td>
+            <td><input type="text" id="film-name" name="Name"></td>
+          </tr>
+          <tr>
+            <td><label for="release-date">Release Date</label></td>
+            <td><input type="date" id="release-date" name="Date"></td>
+          </tr>
+          <tr>
+            <td><label for="rating">Rating (out of 5)</label></td>
+            <td><input type="range" id="rating" name="Rating" min="1" max="5"></td>
+          </tr>
+          <tr>
+            <td><label for="film-poster">Upload Film Poster</label></td>
+            <td><input type="file" id="film-poster" name="Poster"></td>
+          </tr>
+        </table>
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </section>
+
+  <section class="posters">
+    <h3>Posters</h3>
+    <div class="posters-grid">
+      <img
+        src="https://m.media-amazon.com/images/M/MV5BNjEzYjJmNzgtNDkwNy00MTQ4LTlmMWMtNzA4YjE2NjI0ZDg4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UY209_CR0,0,140,209_AL_.jpg"
+        alt="Apollo 13 Poster">
+      <img
+        src="https://m.media-amazon.com/images/M/MV5BNWIwODRlZTUtY2U3ZS00Yzg1LWJhNzYtMmZiYmEyNmU1NjMzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UY209_CR2,0,140,209_AL_.jpg"
+        alt="Forrest Gump Poster">
+      <img
+        src="https://m.media-amazon.com/images/M/MV5BMTM1MTIwNTMxOF5BMl5BanBnXkFtZTcwNjIxMjQyMw@@._V1_UY209_CR7,0,140,209_AL_.jpg"
+        alt="The Terminal Poster">
+      <img
+        src="https://m.media-amazon.com/images/M/MV5BZTcxNzgzZjMtYzZiZC00MmE1LTg3MzQtZDAxMTYyZWE4MDNhL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UY209_CR0,0,140,209_AL_.jpg"
+        alt="You've Got Mail Poster">
+      <img
+        src="https://m.media-amazon.com/images/M/MV5BNWY1MDJkZGUtZTE2OS00ODZiLTlmNzQtMDZjNzM2ZjkwM2QxXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UY209_CR0,0,140,209_AL_.jpg"
+        alt="Sleepless in Seattle Poster">
+      <img
+        src="https://m.media-amazon.com/images/M/MV5BZjhkMDM4MWItZTVjOC00ZDRhLThmYTAtM2I5NzBmNmNlMzI1XkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_UY209_CR1,0,140,209_AL_.jpg"
+        alt="Saving Private Ryan Poster">
+      <img
+        src="https://m.media-amazon.com/images/M/MV5BN2Y5ZTU4YjctMDRmMC00MTg4LWE1M2MtMjk4MzVmOTE4YjkzXkEyXkFqcGdeQXVyNTc1NTQxODI@._V1_UY209_CR0,0,140,209_AL_.jpg"
+        alt="Cast Away Poster">
+      <img
+        src="https://m.media-amazon.com/images/M/MV5BY2NmZDAwM2QtZmFiMS00OTJlLTgxMTItZDMyZmVhYjE1MDY3XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX140_CR0,0,140,209_AL_.jpg"
+        alt="Sully Poster">
+      <img
+        src="https://m.media-amazon.com/images/M/MV5BMTY5MzYzNjc5NV5BMl5BanBnXkFtZTYwNTUyNTc2._V1_UY209_CR0,0,140,209_AL_.jpg"
+        alt="Catch Me If You Can Poster">
     </div>
-  </form>
-  <br>
-  <hr>
-  <h3>Posters</h3>
-  <table cellspacing=10>
-    <tr>
-      <td><img src="https://m.media-amazon.com/images/M/MV5BNjEzYjJmNzgtNDkwNy00MTQ4LTlmMWMtNzA4YjE2NjI0ZDg4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UY209_CR0,0,140,209_AL_.jpg" alt=""></td>
-      <td><img src="https://m.media-amazon.com/images/M/MV5BNWIwODRlZTUtY2U3ZS00Yzg1LWJhNzYtMmZiYmEyNmU1NjMzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UY209_CR2,0,140,209_AL_.jpg" alt=""></td>
-      <td><img src="https://m.media-amazon.com/images/M/MV5BMTM1MTIwNTMxOF5BMl5BanBnXkFtZTcwNjIxMjQyMw@@._V1_UY209_CR7,0,140,209_AL_.jpg" alt=""></td>
-    </tr>
-    <tr>
-      <td><img src="https://m.media-amazon.com/images/M/MV5BZTcxNzgzZjMtYzZiZC00MmE1LTg3MzQtZDAxMTYyZWE4MDNhL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UY209_CR0,0,140,209_AL_.jpg" alt=""></td>
-      <td><img src="https://m.media-amazon.com/images/M/MV5BNWY1MDJkZGUtZTE2OS00ODZiLTlmNzQtMDZjNzM2ZjkwM2QxXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UY209_CR0,0,140,209_AL_.jpg" alt=""></td>
-      <td><img src="https://m.media-amazon.com/images/M/MV5BZjhkMDM4MWItZTVjOC00ZDRhLThmYTAtM2I5NzBmNmNlMzI1XkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_UY209_CR1,0,140,209_AL_.jpg" alt=""></td>
-    </tr>
-    <tr>
-      <td><img src="https://m.media-amazon.com/images/M/MV5BN2Y5ZTU4YjctMDRmMC00MTg4LWE1M2MtMjk4MzVmOTE4YjkzXkEyXkFqcGdeQXVyNTc1NTQxODI@._V1_UY209_CR0,0,140,209_AL_.jpg" alt=""></td>
-      <td><img src="https://m.media-amazon.com/images/M/MV5BY2NmZDAwM2QtZmFiMS00OTJlLTgxMTItZDMyZmVhYjE1MDY3XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX140_CR0,0,140,209_AL_.jpg" alt=""></td>
-      <td><img src="https://m.media-amazon.com/images/M/MV5BMTY5MzYzNjc5NV5BMl5BanBnXkFtZTYwNTUyNTc2._V1_UY209_CR0,0,140,209_AL_.jpg" alt=""></td>
-    </tr>
-  </table>
+  </section>
 </body>
 
 </html>
